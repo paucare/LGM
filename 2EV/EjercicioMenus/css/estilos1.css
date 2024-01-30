@@ -1,0 +1,25 @@
+body{
+    background-color: brown;
+}
+ul{
+    list-style: none;
+    }
+
+li{
+    float: left;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: azure;
+    }
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: red;
+}
+.menu{
+    position: sticky;
+    top: 30px;
+    }

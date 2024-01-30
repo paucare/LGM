@@ -1,0 +1,25 @@
+.container{
+    border: solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.container img{
+    float: right;
+    margin-right: 1em;
+    width: 20%;
+}
+
+.container:nth-of-type(3){
+    background-color: burlywood;
+    height: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+#clear{
+    clear:both;
+}
+

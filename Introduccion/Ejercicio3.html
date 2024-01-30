@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        th,td {border: 1px black solid;}
+        table { border-collapse:collapse;}
+        .lmsg{background-color: rgb(100, 175, 25);}
+        .prog{background-color: rgb(231, 75, 75);}
+        .eds{background-color:cornflowerblue;}
+        .fol{background-color: chocolate;}
+        .bbdd{background-color:mediumpurple;}
+        .sif{background-color: teal;}
+        .head{background-color: burlywood;}
+        .horas{background-color: darkgray;}
+        td{color:aliceblue;}
+        
+    </style>
+</head>
+ <!-- Como no hemos pasado a CSS
+con esta forma, que aunque no es la mas correcta
+podemos hacer las lineas de la tabla y otras caracteristicas-->
+<body>
+    <div style="text-align: center">
+        <table>
+            <tr>
+                <caption>Horario DAM1</caption>
+                <thead class="head">
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </thead>
+            </tr>
+            
+            <tbody>
+                <tr>
+                    <td class="horas">15:15 - 16:05</td>
+                    <td rowspan="2" class="prog"> Programación</td>
+                    <td rowspan="2" class="sif">Sistemas Informáticos</td>
+                    <td rowspan="2" class="lmsg">Lenguajes de Marcas</td>
+                    <td rowspan="2" class="eds">Entornos de Desarollo</td>
+                    <td rowspan="2" class="bbdd">Bases de Datos</td>
+                </tr>
+                <tr>
+                    <td class="horas">16:10 - 17:00</td>
+                </tr>
+                <tr>
+                    <td class="horas">17:05 - 17:55</td>
+                    <td class="eds">Entornos de Desarollo</td>
+                    <td class="fol">Formación y O.L.</td>
+                    <td class="prog">Programación</td>
+                    <td class="bbdd">Bases de Datos</td>
+                    <td class="sif">Sistemas Informáticos</td>
+                </tr>
+                <tr>
+                    <td class="horas">17:55-18:05</td>
+                    <td style="color:black" colspan="5">Recreo</td>
+                </tr>
+                <tr>
+                    <td class="horas">18:05 - 18:55</td>
+                    <td colspan="2" class="fol">Formación y O.L.</td>
+                    <td class="prog">Programación</td>
+                    <td class="bbdd">Bases de Datos</td>
+                    <td class="sif">Sistemas Informáticos</td>
+                </tr>
+                <tr>
+                    <td class="horas">19:00 - 19:50</td>
+                    <td class="bbdd"rowspan="2">Bases de Datos</td>
+                    <td rowspan="2"  class="prog">Programación</td>
+                    <td class="sif"rowspan="2">Sistemas Informáticos</td>
+                    <td class="prog"rowspan="2">Programación</td>
+                    <td rowspan="2" class="lmsg">Lenguajes de Marcas</td>
+                </tr>
+                <tr>
+                    <td class="horas">19:55 - 20:45</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
+
+<!-- <th></th>  es lo mismo que -->
+<!-- <td><b></b></td>-->

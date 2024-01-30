@@ -1,0 +1,18 @@
+
+*{
+    margin: 10px;
+}
+
+h1{
+    border:solid blue 2px;
+    padding: 10px;
+}
+
+h2 {
+    border: solid gray 2px;
+}
+
+ul{
+    border: solid green 2px;
+}
+

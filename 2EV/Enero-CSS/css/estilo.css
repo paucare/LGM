@@ -1,0 +1,19 @@
+*{
+    text-align: center;
+    font-weight: bold;
+
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+tr{
+    width: 50px;
+    height: 80px;
+}
+
+table, td{
+    border-collapse: collapse;
+    border: solid black 2px;
+    margin: auto;
+}

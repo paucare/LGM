@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: gray;
+    margin: 20px auto;
+    margin-bottom: 20px;;
+    padding: 20px;
+    width: 90%;
+}
+
+.sidebar{
+    background-color: yellow;
+    float:left;
+    width: 25%;
+    height: 600px;
+}
+.article {
+    background-color: red;
+    float: left;
+    height: 300px;
+    width: 20%;
+    margin-left: 5%;
+}
+
+footer{
+    background-color: blue;
+    float: left;
+    height: 290px;
+    margin-left: 5%;
+    margin-top: 10px;
+    width:70%;
+}
+.cb{
+    clear: both;
+}
+
