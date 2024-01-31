@@ -1,0 +1,135 @@
+/* configuración global*/
+
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color-container: #cccccc;
+    --bg-color: #074619;
+    --text-color: #fff;
+    --menu-text-color: #8d8a8a;
+    --menu-bg-hover-color: #e2dfdf;
+    --menu-text-hover-color: #087c29;
+    --submenu-text-color: #000;
+    --footer-bg-menu-color: #087c29;
+}
+
+/* estilos comunes */
+.container{
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 0 0 10px var(--bg-color-container);
+}
+
+.cb{
+    clear:both;
+}
+
+/*header */
+
+.header-contacto{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 10px 30px;
+    font-size: 0,9rem;
+}
+.header-contacto__atencion{
+    float: left;
+    width: 50%;
+}
+.header-contacto__atencion img{
+    margin-right: 5px;
+}
+.header-contacto__atencion p{
+    display: inline-block;
+}
+.header-contacto__social{
+    float: right;
+    width: 50%;
+}
+.header-contacto__social p {
+    display: inline-block;
+}
+.header-contacto__social p a{
+    text-align: none;
+    color: var(--text-color)
+}
+.header-contacto__social img{
+    margin-left: 5px;
+}
+
+/*menu*/
+
+.header-menu{
+    padding: 10px 30px;
+}
+
+.header-menu__icono{
+    width: 25%;
+    float: left;
+}
+.header-menu nav{
+    width: 75%;
+    float: left;
+    text-transform: uppercase;
+    font-size: 0,8rem;
+}
+
+.header-menu nav ul,
+.header-menu nav li{
+    padding: 0;
+    margin: 0;
+}
+
+.header-menu nav li{
+    list-style-type: none;
+    float: left;
+    color: var(--menu-text-color);
+    padding: 10px;
+    position: relative;
+}
+
+.header-menu ul li ul{
+    display: none;
+    position: absolute;
+    padding-top: 15px;
+    background-color: var(--text-color);
+}
+.header-menu ul li ul li{
+    width: 200px;
+    color: var(--submenu-text-color);
+    border: 1px solid var(--menu-bg-hover-color);
+}
+
+.header-menu nav ul li:hover ul{
+    display: block;
+}
+
+/* foto bustamante */
+
+.foto-busta{
+    position: relative;
+}
+
+[src="img/coviran-bustamante.png"]{
+    width: 100%;
+}
+
+[src="img/fanta2.png"]{
+    position: absolute;
+    left: 120px;
+    transition: left 3s;
+}
+
+
+[src="img/fanta2.png"]:hover{
+   left: 0px;
+}
+
+
+
+
+
+
+
