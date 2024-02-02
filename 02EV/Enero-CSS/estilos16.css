@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/Fondo.jpg);
+    background-repeat: repeat-x;
+    position: relative;
+}
+
+.cb{
+    clear: both;
+}
+
+/* header */
+
+.header-escudo{
+    background-image:url(img/cabecera.jpg);
+}
+.header img{
+    float: right;
+}

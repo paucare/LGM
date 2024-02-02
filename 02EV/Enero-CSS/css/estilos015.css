@@ -104,6 +104,7 @@
 
 .header-menu nav ul li:hover ul{
     display: block;
+    z-index: 20;
 }
 
 /* foto bustamante */
@@ -126,6 +127,78 @@
 [src="img/fanta2.png"]:hover{
    left: 0px;
 }
+
+/*zona de noticias*/
+
+.noticias{
+    padding: 10px;
+}
+
+.noticia{
+    width: 32%;
+    margin: 5px;
+    box-shadow: 0 0 10px var(--bg-color-container);
+    height: 360px;
+    font-size: 1rem;
+    float:left;
+}
+
+.noticia img{
+    width: 100%;
+}
+.noticia p{
+    padding: 10px;
+    text-align: center;
+}
+
+.noticia:hover{
+    opacity: 0.5;
+}
+
+/* footer */
+
+.footer-arriba{
+    background-color: var(--footer-bg-menu-color);
+}
+
+.footer-arriba__menu-item{
+    float:left;
+    width: 25%;
+    padding: 0 20px;
+}
+.footer-arriba__menu-item a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.footer-arriba__menu-item p{
+    border-bottom: 1px solid var(--text-color);
+    padding: 10px 20px;
+}
+
+.footer-abajo{
+    background-color: var(--bg-color);
+    padding: 10px 30px;
+    color: var(--text-color);
+    font-size:0,8rem;
+}
+.footer-abajo__imagenes{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
