@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<empleados>
+<?xml-stylesheet type="text/xsl" href="transformacion.xslt"?>
+
+<empleados xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNameSchemaLocation="empleados.xsd">
     <empleado>
         <nombre>Alessandro</nombre>
         <apellido>Paucar</apellido>

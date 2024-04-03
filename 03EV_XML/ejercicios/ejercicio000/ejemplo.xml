@@ -1,4 +1,8 @@
-<peliculas>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transformacion.xslt"?>
+
+<peliculas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNameSchemaLocation="ejemplo.xsd">
     <pelicula genero="drama">
         <nombre>Parasitos</nombre>
         <año>2019</año>

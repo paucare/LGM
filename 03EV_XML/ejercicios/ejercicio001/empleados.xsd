@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del elemento empleados -->
+  <xs:element name="empleados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="empleado" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Definición del elemento nombre -->
+              <xs:element name="nombre" type="xs:string"/>
+              <!-- Definición del elemento apellido -->
+              <xs:element name="apellido" type="xs:string"/>
+              <!-- Definición del elemento puesto -->
+              <xs:element name="puesto" type="xs:string"/>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
