@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados>
+    <empleado>
+        <nombre>Alessandro</nombre>
+        <apellido>Paucar</apellido>
+        <puesto>Desarollador</puesto>
+    </empleado>
+    <empleado>
+        <nombre>Fouad</nombre>
+        <apellido>Aharchi</apellido>
+        <puesto>Administrador</puesto>
+    </empleado>
+</empleados>

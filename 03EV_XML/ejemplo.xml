@@ -1,0 +1,17 @@
+<peliculas>
+    <pelicula genero="drama">
+        <nombre>Parasitos</nombre>
+        <año>2019</año>
+        <director nacionalidad="corea">Bong Joon-ho</director>
+    </pelicula>
+    <pelicula genero="comedia">
+        <nombre>Scott Pilgrim contra el Mundo</nombre>
+        <año>2010</año>
+        <director nacionalidad="eeuu">Edgar Wright</director>
+    </pelicula>
+    <pelicula genero="drama">
+        <nombre>Pierrot le Fou</nombre>
+        <año>1965</año>
+        <director nacionalidad="francia">Jean-luc Godard</director>
+    </pelicula>
+</peliculas>
