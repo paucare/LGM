@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ejercicio1.xslt"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+    <persona >
+        <nombre>Alessandro</nombre>
+        <apellido>Paucar</apellido>
+        <edad>24</edad>
+    </persona>
+</personas>
