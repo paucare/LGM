@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(img/fondo_header_body.gif);
+    background-repeat: repeat-x;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+header {
+    background-image: url(img/fondo_header.jpg);
+}
+.header__candidatos {
+    padding-top: 10px;
+    text-align: center;
+}
+.header__candidatos img {
+    width: 110px;
+}
+.header__titulo {
+    text-align: center;
+    font-size: 24px;
+    color: beige;
+}
+.general {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 30px;
+    background-color: orange;
+    color: beige;
+    position: relative;
+}
+img[src="img/ico-e12.png"] {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.votos {
+    background-color: #f5f5dc;
+    color: brown;
+}
+.votos ul {
+    width: 300px;
+    margin: 0 auto;
+}
+.votos ul li {
+    list-style-image: url(img/folio.png);
+}
+.bgmarron {
+    background-color: #a52a2a;
+    height: 20px;
+}
+.partidos {
+    padding: 10px;
+    background-color: #ffa500;
+    color: beige;
+}
+.partidos table {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: brown;
+    border-spacing: 0;
+}
+.partidos th {
+    background-color: brown;
+    color: beige;
+    border-bottom: solid 1px beige;
+}
+.partidos td {
+    border-bottom: solid 1px brown;
+}
+.partidos img {
+    width: 32px;
+}
+footer {
+    text-align: center;
+    font-size: 30px;
+    color: beige;
+    background-color: brown;
+}
