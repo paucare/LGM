@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="estilo.xsl" type="text/xsl"?>
+<pronostico>
+	<origen productor="Agencia Estatal de Meteorologia - AEMET. Gobierno de Espana">
+		<web>http://www.aemet.es/es/eltiempo/prediccion/municipios/salamanca-id37274</web>
+		<nota_legal>http://www.aemet.es/es/nota_legal</nota_legal>
+	</origen>
+	<fecha dia="2021-03-14" hora="08:05:04" />
+	<municipio>Salamanca</municipio>
+	<provincia>Salamanca</provincia>
+	<prediccion>
+		<dia>
+			<fecha>2013-03-14</fecha>
+			<estado_cielo>Despejado</estado_cielo>
+			<viento>
+				<direccion>NO</direccion>
+				<velocidad>20</velocidad>
+			</viento>
+			<temperatura>
+				<maxima>-3</maxima>
+				<minima>-10</minima>
+			</temperatura>
+		</dia>
+		<dia>
+			<fecha>2013-03-15</fecha>
+			<estado_cielo>Poco nuboso</estado_cielo>
+			<viento>
+				<direccion>O</direccion>
+				<velocidad>5</velocidad>
+			</viento>
+			<temperatura>
+				<maxima>9</maxima>
+				<minima>-4</minima>
+			</temperatura>
+		</dia>
+		<dia>
+			<fecha>2013-03-16</fecha>
+			<estado_cielo>Muy nuboso</estado_cielo>
+			<viento>
+				<direccion>S</direccion>
+				<velocidad>15</velocidad>
+			</viento>
+			<temperatura>
+				<maxima>32</maxima>
+				<minima>4</minima>
+			</temperatura>
+		</dia>
+		<dia>
+			<fecha>2013-03-17</fecha>
+			<estado_cielo>Cubierto con lluvia</estado_cielo>
+			<viento>
+				<direccion>O</direccion>
+				<velocidad>20</velocidad>
+			</viento>
+			<temperatura>
+				<maxima>16</maxima>
+				<minima>7</minima>
+			</temperatura>
+		</dia>
+	</prediccion>
+</pronostico>
