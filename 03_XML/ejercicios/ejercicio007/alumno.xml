@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="estilo.xslt"?>
+
+<alumnos>
+    <alumno matricula="MT01" anio="2021">
+        <nombre>Alessandro</nombre>
+
+        <apellidos>Paucar Enrriquez</apellidos>
+
+        <asignaturas>
+            <asignatura nombre="Matemáticas">
+                <nota>8</nota>
+            </asignatura>
+            <asignatura nombre="Lengua Castellana">
+                <nota>7</nota>
+            </asignatura>
+            <asignatura nombre="Inglés">
+                <nota>10</nota>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+    <alumno matricula="MT02" anio="2021">
+        <nombre>Elena</nombre>
+
+        <apellidos>Herrera Correa</apellidos>
+
+        <asignaturas>
+            <asignatura nombre="Matemáticas">
+                <nota>7</nota>
+            </asignatura>
+            <asignatura nombre="Lengua Castellana">
+                <nota>10</nota>
+            </asignatura>
+            <asignatura nombre="Inglés">
+                <nota>8</nota>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+    <alumno matricula="MT01" anio="2020">
+        <nombre>Daniel</nombre>
+
+        <apellidos>Collado Lendinez</apellidos>
+
+        <asignaturas>
+            <asignatura nombre="Matemáticas">
+                <nota>8</nota>
+            </asignatura>
+            <asignatura nombre="Lengua Castellana">
+                <nota>5</nota>
+            </asignatura>
+            <asignatura nombre="Inglés">
+                <nota>9</nota>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+</alumnos>
