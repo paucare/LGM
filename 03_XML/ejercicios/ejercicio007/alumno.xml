@@ -36,7 +36,7 @@
             </asignatura>
         </asignaturas>
     </alumno>
-    <alumno matricula="MT01" anio="2020">
+    <alumno matricula="MT03" anio="2020">
         <nombre>Daniel</nombre>
 
         <apellidos>Collado Lendinez</apellidos>
