@@ -2,5 +2,27 @@
 <?xml-stylesheet type="text/xsl" href="estilo.xslt"?>
 
 <catalogo>
-    
+    <producto id="1" categoria="Electrónica"> 
+        <nombre>Smartphone</nombre> 
+        <precio>500</precio>
+        <descripcion>Teléfono inteligente de última generación.</descripcion> 
+    </producto> <producto id="2" categoria="Ropa"> 
+        <nombre>Camisa</nombre> 
+        <precio>30</precio> 
+        <descripcion>Camisa de algodón de manga larga.
+        </descripcion> </producto> <!-- Agrega más productos con atributos y una estructura similar --> 
+    <producto id="3" categoria="Libro">
+            <nombre>El tiempo contigo</nombre>
+            <descripción>Novela ligera japonesa</descripción>
+    </producto>
+    <producto id="4" categoria="Electrónica">
+        <nombre>Nintendo Switch</nombre>
+        <precio>350</precio>
+        <descripción>Videoconsola familiar de Nintendo</descripción>
+    </producto>
+    <producto id="5" categoria="Deporte">
+    <nombre>Caña de pesca</nombre>
+    <descripción>Caña de pesca en rios de 200g</descripción>
+    <precio>60</precio>
+    </producto>
 </catalogo>
