@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+  <!ELEMENT biblioteca (libro+)>
+  <!ELEMENT libro (titulo,autor,año)>
+  <!ATTLIST libro id ID #REQUIRED>
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT año (#PCDATA)>
+]>
+
+<biblioteca>
+  <libro id="L001">
+    <titulo>El Gran Gatsby</titulo>
+    <autor>F. Scott Fitzgerald</autor>
+    <año>1925</año>
+  </libro>
+  <libro id="L002">
+    <titulo>Cien Años de Soledad</titulo>
+    <autor>Gabriel García Márquez</autor>
+    <año>1967</año>
+  </libro>
+  <libro id="L003">
+    <titulo>Pensar</titulo>
+    <autor>Simon Blackburn</autor>
+    <año>1999</año>
+  </libro>
+  <libro id="L004">
+    <titulo>Gente normal</titulo>
+    <autor>Sally Rooney </autor>
+    <año>2018</año>
+  </libro>
+</biblioteca>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="estilo.xslt"?>
+
+<rss version="2.0">
+   <channel>
+      <item>
+      <title>Nuestra web</title>
+      <link>http://www.miszapatos.com</link>
+      <description>Pagina web lider de venta de zapatos</description>
+       </item>
+
+       <item>
+          <title>Articulos nuevos</title>
+          <link>http://www.miszapatos.com/novedades</link>
+          <description>Ultimos articulos añadidos</description>
+        </item>
+
+       <item>
+          <title>Ultimas noticias</title>
+          <link>http://www.miszapatos.com/noticias</link>
+          <description>Actualizaciones del sector</description>
+       </item>
+    </channel>
+  </rss>

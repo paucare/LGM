@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Proyecto [
+  <!ELEMENT Proyecto (Nombre,Tareas,Usuarios)>
+  <!ELEMENT Nombre (#PCDATA)>
+  <!ELEMENT Tareas (Tarea+)>
+  <!ELEMENT Tarea (Titulo,Responsable)>
+  <!ATTLIST Tarea id ID #REQUIRED>
+  <!ELEMENT Titulo (#PCDATA)>
+  <!ELEMENT Responsable (IDPersona)>
+  <!ELEMENT IDPersona (#PCDATA)>
+  <!ELEMENT Usuarios (Usuario+)>
+  <!ELEMENT Usuario (NombreUsuario)>
+  <!ATTLIST Usuario id ID #REQUIRED>
+  <!ATTLIST Usuario rol CDATA #REQUIRED>
+  <!ELEMENT NombreUsuario (#PCDATA)>
+]>
+
+
+<Proyecto>
+  <Nombre>Proyecto A</Nombre>
+  <Tareas>
+    <Tarea id="T1">
+      <Titulo>Desarrollar aplicación</Titulo>
+      <Responsable>
+        <IDPersona>U1</IDPersona>
+      </Responsable>
+    </Tarea>
+    <Tarea id="T2">
+      <Titulo>Probar aplicación</Titulo>
+      <Responsable>
+        <IDPersona>U2</IDPersona>
+      </Responsable>
+    </Tarea>
+  </Tareas>
+  <Usuarios>
+    <Usuario id="U1" rol="desarrollador">
+      <NombreUsuario>Juan Pérez</NombreUsuario>
+    </Usuario>
+    <Usuario id="U2" rol="tester">
+      <NombreUsuario>María González</NombreUsuario>
+    </Usuario>
+  </Usuarios>
+</Proyecto>
+
+<!-- <Relacion UsuarioID="U1" ProyectoID="P1" />-->

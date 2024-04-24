@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ListaDeTareas [
+  <!ELEMENT ListaDeTareas (Tarea+)>
+  <!ELEMENT Tarea (Titulo,Subtareas)>
+  <!ELEMENT Titulo (#PCDATA)>
+  <!ELEMENT Subtareas (Subtarea+)>
+  <!ELEMENT Subtarea (#PCDATA)>
+
+]>
+<ListaDeTareas>
+  <Tarea>
+    <Titulo>Preparar la presentación</Titulo>
+    <Subtareas>
+      <Subtarea>Crear diapositivas</Subtarea>
+      <Subtarea>Ensayar presentación</Subtarea>
+    </Subtareas>
+  </Tarea>
+  <Tarea>
+    <Titulo>Organizar el evento</Titulo>
+    <Subtareas>
+      <Subtarea>Reservar lugar</Subtarea>
+      <Subtarea>Contratar servicios de catering</Subtarea>
+    </Subtareas>
+  </Tarea>
+  <Tarea>
+    <Titulo>Comprar regalos</Titulo>
+    <Subtareas>
+      <Subtarea>Seleccionar tiendas</Subtarea>
+    </Subtareas>
+  </Tarea>
+</ListaDeTareas>

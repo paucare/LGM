@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Libros [
+  <!ELEMENT Libros (Libro)>
+  <!ELEMENT Libro (Titulo,Autor)>
+  <!ELEMENT Titulo (#PCDATA)>
+  <!ELEMENT Autor (#PCDATA)>
+]>
+
+
+<Libros>
+  <Libro>
+    <Titulo>El Principito</Titulo>
+    <Autor>Antoine de Saint-Exupéry</Autor>
+  </Libro>
+</Libros>

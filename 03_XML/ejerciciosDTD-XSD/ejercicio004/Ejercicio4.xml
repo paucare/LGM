@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Productos [
+  <!ELEMENT Productos (Producto+)>
+  <!ELEMENT Producto (Nombre,Descripcion?,Precio,Stock*)>
+  <!ELEMENT Nombre (#PCDATA)>
+  <!ELEMENT Descripcion (#PCDATA)>
+  <!ELEMENT Precio (#PCDATA)>
+  <!ELEMENT Stock EMPTY>
+  ]>
+
+<Productos>
+<Producto>
+  <Nombre>Laptop XYZ</Nombre>
+  <Descripcion>Una laptop de alto rendimiento</Descripcion>
+  <Precio>999.99</Precio>
+  <Stock/>
+</Producto>
+
+<Producto>
+  <Nombre>Teléfono ABC</Nombre>
+  <Precio>499.99</Precio>
+</Producto>
+
+<Producto>
+  <Nombre>Tablet 123</Nombre>
+  <Descripcion>Una tablet ligera y versátil</Descripcion>
+  <Precio>299.99</Precio>
+  <Stock/>
+</Producto>
+</Productos>
