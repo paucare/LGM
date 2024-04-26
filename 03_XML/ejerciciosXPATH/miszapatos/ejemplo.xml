@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="estilo.xslt"?>
+<!DOCTYPE rss [
+   <!ELEMENT rss (channel)>
+   <!ATTLIST rss version CDATA #REQUIRED>
+   <!ELEMENT channel (item+)>
+   <!ELEMENT item (title,link,description)>
+   <!ELEMENT title (#PCDATA)>
+   <!ELEMENT link (#PCDATA)>
+   <!ELEMENT description (#PCDATA)>
+]>
 
 <rss version="2.0">
    <channel>

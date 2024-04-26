@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="estilo.xslt"?>
+<!DOCTYPE alumnos [
+    <!ELEMENT alumnos (alumno+)>
+    <!ATTLIST alumno matricula ID #REQUIRED>
+    <!ATTLIST alumno anio CDATA #REQUIRED>
+    <!ELEMENT alumno (nombre,apellidos,asignaturas)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT asignaturas (asignatura+)>
+    <!ELEMENT asignatura (nota)>
+    <!ATTLIST asignatura nombre CDATA #REQUIRED>
+    <!ELEMENT nota (#PCDATA)>
+]>
 
 <alumnos>
     <alumno matricula="MT01" anio="2021">
