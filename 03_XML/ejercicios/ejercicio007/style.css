@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    background-color: white;
+}
+
+h2{
+    color: black;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td,th{
+    border: solid black 2px;
+    padding: 50px;
+    text-align: center;
+}
+tr th{
+    color: black;
+    background-color: wheat;
+}
+
+td{
+    background-color: antiquewhite;
+}
+
+
+
