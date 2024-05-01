@@ -1,14 +1,28 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
     <xs:element name="libros">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="libro">
+                 <!-- Definición del elemento libro -->
+                <xs:element name="libro" minOccurs="1" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
+                             <!-- Título (obligatorio) -->
                             <xs:element name="titulo" type="xs:string"/>
+                            <!-- Autor (obligatorio) -->
                             <xs:element name="autor" type="xs:string"/>
-                            <xs:element name="añopub" type="xs:date"/>
-                            <xs:element name="genero" type="xs:string"/>
+                             <!-- Año de publicación (opcional) -->
+                            <xs:element name="añopub" type="xs:date" minOccurs="0" maxOccurs="1"/>
+                            <!-- Género (obligatorio, con valores predefinidos) -->
+                            <xs:element name="genero">
+                            <xs:complexType>
+                                <xs:choice>     
+                                    <xs:element name="Ficcion" type="xs:string"/>
+                                    <xs:element name="NoFiccion" type="xs:string"/>
+                                    <xs:element name="Poesía" type="xs:string"/>
+                                </xs:choice>
+                            </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

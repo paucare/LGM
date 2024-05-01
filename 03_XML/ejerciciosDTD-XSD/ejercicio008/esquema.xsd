@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+<xs:element name="empleados">
+        <xs:complexType>
+            <xs:sequence>
+
+ <!-- Definición del elemento empleado -->
+    <xs:element name="empleado" minOccurs="1" maxOccurs="unbounded">
+        <xs:complexType>
+            <xs:sequence>
+            <!-- Nombre (Obligatorio) -->
+                <xs:element name="nombre" type="xs:string"/>
+            <!-- Apellido (Obligatorio) -->
+                <xs:element name="apellido" type="xs:string"/>
+            <!-- Edad (Obligatorio) -->
+                <xs:element name="edad">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="18"/>
+                        <xs:maxInclusive value="65"/>
+                    </xs:restriction>
+                </xs:simpleType>
+                </xs:element>
+            <!-- Departamento (Obligatorio) -->
+                <xs:element name="departamento">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Ventas"/>
+                        <xs:enumeration value="Recursos Humanos"/>
+                        <xs:enumeration value="Finanzas"/>
+                        <xs:enumeration value="Tecnología"/>
+                    </xs:restriction>
+                </xs:simpleType>
+                 </xs:element>
+             <!-- Salario (Obligatorio) -->
+                <xs:element name="salario">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="1000"/>
+                        <xs:maxInclusive value="100000"/>
+                    </xs:restriction>
+                </xs:simpleType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+        </xs:element>   
+    </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>
