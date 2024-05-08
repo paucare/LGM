@@ -10,11 +10,11 @@
         <xs:complexType>
             <xs:sequence>
             <!-- Nombre (Obligatorio) -->
-                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="nombre" type="xs:string" minOccurs="1"/>
             <!-- Apellido (Obligatorio) -->
-                <xs:element name="apellido" type="xs:string"/>
+                <xs:element name="apellido" type="xs:string" minOccurs="1"/>
             <!-- Edad (Obligatorio) -->
-                <xs:element name="edad">
+                <xs:element name="edad" minOccurs="1">
                 <xs:simpleType>
                     <xs:restriction base="xs:integer">
                         <xs:minInclusive value="18"/>
@@ -23,7 +23,7 @@
                 </xs:simpleType>
                 </xs:element>
             <!-- Departamento (Obligatorio) -->
-                <xs:element name="departamento">
+                <xs:element name="departamento" minOccurs="1">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
                         <xs:enumeration value="Ventas"/>
@@ -34,7 +34,7 @@
                 </xs:simpleType>
                  </xs:element>
              <!-- Salario (Obligatorio) -->
-                <xs:element name="salario">
+                <xs:element name="salario" minOccurs="1">
                 <xs:simpleType>
                     <xs:restriction base="xs:integer">
                         <xs:minInclusive value="1000"/>

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
-    <xs:element name="libros">
-        <xs:complexType>
-            <xs:sequence>
+    
                  <!-- Definición del elemento libro -->
-                <xs:element name="libro" minOccurs="1" maxOccurs="unbounded">
-                    <xs:complexType>
+
+                    <xs:complexType name="libroType">
                         <xs:sequence>
                              <!-- Título (obligatorio) -->
-                            <xs:element name="titulo" type="xs:string"/>
+                            <xs:element name="titulo" type="xs:string" minOccurs="1"/>
                             <!-- Autor (obligatorio) -->
-                            <xs:element name="autor" type="xs:string"/>
+                            <xs:element name="autor" type="xs:string" minOccurs="1"/>
                              <!-- Año de publicación (opcional) -->
                             <xs:element name="añopub" type="xs:date" minOccurs="0" maxOccurs="1"/>
                             <!-- Género (obligatorio, con valores predefinidos) -->
@@ -25,8 +23,14 @@
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+               
+
+    <!-- Elemento Raíz -->
+<xs:element name="libros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="libro" type="libroType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

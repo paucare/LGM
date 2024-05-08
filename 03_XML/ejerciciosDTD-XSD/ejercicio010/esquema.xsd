@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+<!-- ComplexType Producto-->
+<xs:complexType name="productoType">
+  <xs:sequence>
+    <xs:element name="codigo" type="xs:ID" minOccurs="1"/>
+    <xs:element name="nombre" type="xs:string" minOccurs="1"/>
+    <xs:element name="descripcion" type="xs:string" minOccurs="1"/>
+    <xs:element name="categoria" minOccurs="1">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Electrónica" />
+          <xs:enumeration value="Hogar" />
+          <xs:enumeration value="Moda" />
+          <xs:enumeration value="Deportes" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+    <xs:element name="precio" type="positiveDecimalType" />
+    <xs:element name="existencias" type="positiveIntegerType" />
+    <xs:element name="envio_gratuito" type="xs:boolean" minOccurs="0" />
+  </xs:sequence>
+</xs:complexType>
+
+
+<xs:simpleType name="positiveDecimalType">
+  <xs:restriction base="xs:decimal">
+    <xs:minExclusive value="0"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="positiveIntegerType">
+  <xs:restriction base="xs:integer">
+    <xs:minExclusive value="0"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<!-- Elemento Raíz -->
+<xs:element name="productos">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="producto" type="productoType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

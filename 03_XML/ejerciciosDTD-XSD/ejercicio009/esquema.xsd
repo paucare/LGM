@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+<!-- Definición del elemento raíz-->
+<xs:element name="recetas">
+        <xs:complexType>
+            <xs:sequence>
+                
+                <!-- Definición del elemento receta -->
+                <xs:element name="receta" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                    <xs:sequence>
+
+                <!-- Nombre (Obligatorio)-->
+                        <xs:element name="nombre" type="xs:string" minOccurs="1"/>
+                <!-- Ingredientes (Al menos uno)-->   
+                        <xs:element name="ingredientes" minOccurs="1">
+                        <xs:complexType>
+                        <xs:sequence>
+                        <xs:element name="nombre" type="xs:string" minOccurs="1"/>
+                        </xs:sequence>
+                        </xs:complexType>
+                        </xs:element>
+                <!-- Cantidad (Al menos uno)-->   
+                        <xs:element name="cantidad" minOccurs="1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:decimal">
+                                <xs:minExclusive value="0"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                        </xs:element>
+                <!-- Unidad de medida (Obligatorio)-->         
+                        <xs:element name="unidad_de_medida" minOccurs="1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="gramos"/>
+                                <xs:enumeration value="mililitros"/>
+                                <xs:enumeration value="cucharadas"/>
+                                <xs:enumeration value="tazas"/>
+                            </xs:restriction>
+                        </xs:simpleType>    
+                        </xs:element>
+                <!-- Ingredientes (Obligatorio)-->
+                        <xs:element name="ingredientes" minOccurs="1"/>
+                    
+                    </xs:sequence> 
+                    </xs:complexType>
+                </xs:element>
+                
+            
+            </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+</xs:schema>
