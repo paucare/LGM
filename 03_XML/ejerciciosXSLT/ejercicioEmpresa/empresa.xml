@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="estilo.xslt"?>
+<!--
+<!DOCTYPE empresas [
+    <!ELEMENT empresas (empresa+)>
+    <!ELEMENT empresa (nombre,ubicacion,numero_de_empleados,proyectos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ubicacion (#PCDATA)>
+    <!ELEMENT numero_de_empleados (#PCDATA)>
+    <!ELEMENT proyectos (proyecto+)>
+    <!ELEMENT proyecto (fecha_de_inicio,responsable,presupuesto,finalizado,subvencion?)>
+    <!ATTLIST proyecto nombre CDATA #REQUIRED>
+    <!ELEMENT fecha_de_inicio (#PCDATA)>
+    <!ELEMENT responsable (#PCDATA)>
+    <!ELEMENT presupuesto (#PCDATA)>
+    <!ELEMENT finalizado (#PCDATA)>
+    <!ELEMENT subvencion (#PCDATA)>
+]>
+-->
+<empresas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="esquema.xsd">
+<!--<empresas>-->
+    <empresa>
+        <nombre>Innovaciones Tech</nombre>
+        <ubicacion>Madrid,España</ubicacion>
+        <numero_de_empleados>120</numero_de_empleados>
+        <proyectos>
+            <proyecto nombre="Desarollo de ia">
+            <fecha_de_inicio>2023-01-15</fecha_de_inicio>
+            <responsable>Maria Lopez</responsable>
+            <presupuesto>200000</presupuesto>
+            <finalizado>false</finalizado>
+            <subvencion>true</subvencion>
+        </proyecto>
+        <proyecto nombre="Rediseño web">
+            <fecha_de_inicio>2023-03-20</fecha_de_inicio>
+            <responsable>Juan Perez</responsable>
+            <presupuesto>50000</presupuesto>
+            <finalizado>true</finalizado>
+            <subvencion>false</subvencion>
+        </proyecto>
+        <proyecto nombre="Aplicacion secreta">
+            <fecha_de_inicio>2024-01-15</fecha_de_inicio>
+            <responsable>Maria Lopez</responsable>
+            <presupuesto>40000</presupuesto>
+            <finalizado>false</finalizado>
+        </proyecto>
+        </proyectos>
+    </empresa>
+</empresas>

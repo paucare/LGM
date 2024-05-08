@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<!-- ComplexType Empresa-->
+<xs:complexType name="institutoType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" minOccurs="1"/>
+            <xs:element name="ubicacion" type="xs:string" minOccurs="1"/>
+        
+            <xs:element name="profesores">
+            <xs:complexType>
+                <xs:sequence>
+                <xs:element name="profesor" type="profesorType" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:complexType>
+            </xs:element>
+
+            <xs:element name="alumnos">
+            <xs:complexType>
+                <xs:sequence>
+                <xs:element name="alumno" type="alumnoType" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="profesorType">
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="apellidos" type="xs:string"/>
+                <xs:element name="asignaturas">
+                    <xs:complexType>
+                    <xs:sequence>
+                    <xs:element name="asignatura" type="asignaturaType" maxOccurs="unbounded"/>
+                </xs:sequence>
+             </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="asignaturaType">
+            <xs:sequence>
+                <xs:element name="horas" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="nombre" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="alumnoType">
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="apellidos" type="xs:string"/>
+                <xs:element name="edad" type="xs:integer"/>
+            </xs:sequence>
+    </xs:complexType>
+
+<!-- Elemento Raíz -->
+<xs:element name="institutos">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="ies" type="institutoType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

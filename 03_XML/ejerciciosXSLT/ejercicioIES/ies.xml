@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="estilo.xslt"?>
+
+<institutos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="esquema.xsd">
+<ies>
+    <nombre>Instituto nacional de Educación</nombre>
+    <ubicacion>Sevilla,España</ubicacion>
+    <profesores>
+    <profesor>
+        <nombre>Laura</nombre>
+        <apellidos>Garcia Martin</apellidos>
+        <asignaturas>
+            <asignatura nombre="Matemáticas">
+                <horas>
+                    5 horas/semana
+                </horas>
+            </asignatura>
+            <asignatura nombre="Física">
+                <horas>
+                    3 horas/semana
+                </horas>
+            </asignatura>
+        </asignaturas>
+    </profesor>
+    <profesor>
+        <nombre>David</nombre>
+        <apellidos>Ruiz Fernández</apellidos>
+        <asignaturas>
+            <asignatura nombre="Historia">
+                <horas>
+                    4 horas/semana
+                </horas>
+            </asignatura>
+            <asignatura nombre="Gegorafía">
+                <horas>
+                    2 horas/semana
+                </horas>
+            </asignatura>
+        </asignaturas>
+    </profesor>
+    </profesores>
+    <alumnos>
+        <alumno>
+            <nombre>Clara</nombre>
+            <apellidos>Sánchez López</apellidos>
+            <edad>17</edad>
+        </alumno>
+        <alumno>
+            <nombre>Lucas</nombre>
+            <apellidos>Martñinez Pérez</apellidos>
+            <edad>16</edad>
+        </alumno>
+    </alumnos>
+</ies>
+</institutos>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+<!-- ComplexType Empresa-->
+<xs:complexType name="empresaType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" minOccurs="1"/>
+            <xs:element name="ubicacion" type="xs:string" minOccurs="1"/>
+            <xs:element name="numero_de_empleados" type="xs:integer" minOccurs="1"/>
+            <xs:element name="proyectos">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="proyecto" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="fecha_de_inicio" type="xs:date"/>
+                                    <xs:element name="responsable" type="xs:string"/>
+                                    <xs:element name="presupuesto" type="xs:integer"/>
+                                    <xs:element name="finalizado" type="xs:boolean"/>
+                                    <xs:element name="subvencion" type="xs:boolean" minOccurs="0"/>
+                                </xs:sequence>
+                                <xs:attribute name="nombre" type="xs:string" use="required"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+<!-- Elemento Raíz -->
+<xs:element name="empresas">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="empresa" type="empresaType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
