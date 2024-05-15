@@ -42,6 +42,14 @@
                             </xsl:otherwise>
                          </xsl:choose>
                         </td>
+                        <!-- <td>
+                            <xsl:if test="subvencion"> 
+                                <xsl:value-of select="subvencion"/>
+                            </xsl:if>
+                            <xsl:if test="not(subvencion)">
+                                No
+                            </xsl:if>
+                        </td> -->
                     </tr>
 
                     </xsl:for-each>
