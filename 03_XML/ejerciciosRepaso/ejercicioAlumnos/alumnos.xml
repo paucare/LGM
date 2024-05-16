@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="estilo.xslt"?>
+
+<alumnos>
+    <alumno matricula="MT01" anio="2020"> 
+        <nombre>Alessandro</nombre>
+        <apellidos>Paucar Enrriquez</apellidos>
+        <asignaturas>
+            <asignatura nombre="matematicas">
+                <nota>8</nota>
+            </asignatura>
+            <asignatura nombre="lengua">
+                <nota>7</nota>
+            </asignatura>
+            <asignatura nombre="ingles">
+                <nota>10</nota>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+    <alumno matricula="MT02" anio="2019">
+        <nombre>Daniel</nombre>
+        <apellidos>Collado Lendinez</apellidos>
+        <asignaturas>
+            <asignatura nombre="matematicas">
+                <nota>7</nota>
+            </asignatura>
+            <asignatura nombre="lengua">
+                <nota>5</nota>
+            </asignatura>
+            <asignatura nombre="ingles">
+                <nota>6</nota>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+    <alumno matricula="MT03" anio="2021">
+        <nombre>Lidia</nombre>
+        <apellidos>Martín Sanchez</apellidos>
+        <asignaturas>
+            <asignatura nombre="matematicas">
+                <nota>7</nota>
+            </asignatura>
+            <asignatura nombre="lengua">
+                <nota>10</nota>
+            </asignatura>
+            <asignatura nombre="ingles">
+                <nota>8</nota>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+    <alumno matricula="MT04" anio="2020">
+        <nombre>Sonia</nombre>
+        <apellidos>García Hernandéz</apellidos>
+        <asignaturas>
+            <asignatura nombre="matematicas">
+                <nota>5</nota>
+            </asignatura>
+            <asignatura nombre="lengua">
+                <nota>6</nota>
+            </asignatura>
+            <asignatura nombre="ingles">
+                <nota>8</nota>
+            </asignatura>
+        </asignaturas>
+    </alumno>
+</alumnos>

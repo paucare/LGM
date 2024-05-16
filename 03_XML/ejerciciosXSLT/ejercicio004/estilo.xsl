@@ -45,8 +45,8 @@
                             <ul>
                                 <li>Votos Contabilizados: <xsl:value-of select="escrutinio/votos/contabilizados/cantidad"/> - <xsl:value-of select="escrutinio/votos/contabilizados/porcentaje"/> %</li>
                                 <li>Abstenciones: <xsl:value-of select="escrutinio/votos/abstenciones/cantidad"/> - <xsl:value-of select="escrutinio/votos/abstenciones/porcentaje"/> - %</li>
-                                <li>Nulos:<xsl:value-of select="escrutinio/votos/nulos/cantidad"/> - <xsl:value-of select="escrutinio/votos/nulos/cantidad"/> %</li>
-                                <li>Blancos: <xsl:value-of select="escrutinio/votos/blancos/cantidad"/> - <xsl:value-of select="escrutinio/votos/blancos/cantidad"/> %</li>
+                                <li>Nulos:<xsl:value-of select="escrutinio/votos/nulos/cantidad"/> - <xsl:value-of select="escrutinio/votos/nulos/porcentaje"/> %</li>
+                                <li>Blancos: <xsl:value-of select="escrutinio/votos/blancos/cantidad"/> - <xsl:value-of select="escrutinio/votos/blancos/porcentaje"/> %</li>
                             </ul>
                         </section>
                         <section class="partidos">
