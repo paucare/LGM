@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+<!-- ComplexType IES-->
+<xs:complexType name="iesType">
+    <xs:sequence>
+        <xs:element name="profesores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="profesor" type="profesorType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="alumnos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="alumno" type="alumnoType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    </xs:sequence>
+
+    <xs:attribute name="nombre" type="xs:string"/>
+    <xs:attribute name="ubicacion" type="xs:string"/>
+
+</xs:complexType>
+
+<!-- ComplexType Profesor -->
+<xs:complexType name="profesorType">
+        <xs:sequence>
+        <xs:element name="asignaturas">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="asignatura" type="asignaturaType" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        </xs:sequence>
+        <xs:attribute name="nombre" type="xs:string"/>
+        <xs:attribute name="apellidos" type="xs:string"/>
+    </xs:complexType>
+
+
+<!-- ComplexType Asignatura -->
+<xs:complexType name="asignaturaType">
+    <xs:sequence>
+        <xs:element name="horas" type="xs:integer"/>
+    </xs:sequence>
+    <xs:attribute name="nombre" type="xs:string"/>
+</xs:complexType>
+
+<!-- ComplexType Asignatura -->
+<xs:complexType name="alumnoType">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="apellidos" type="xs:string"/>
+        <xs:element name="edad" type="xs:integer"/>
+    </xs:sequence>
+</xs:complexType>
+
+
+<!-- Elemento raíz-->
+<xs:element name="instituto">
+<xs:complexType>
+    <xs:sequence>
+        <xs:element name="ies" type="iesType"/>
+    </xs:sequence>
+</xs:complexType>
+</xs:element>
+
+</xs:schema>

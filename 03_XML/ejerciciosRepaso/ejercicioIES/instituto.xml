@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="estilo.xslt" type="text/xsl"?>
+<!DOCTYPE instituto SYSTEM "instituto.dtd">
+<!-- <instituto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="esquema.xsd"> -->
+    <instituto>
+    <ies nombre="Instituto nacional de educación" ubicacion="Sevilla,España">
+        <profesores>
+            <profesor nombre="Laura" apellidos="García Martín">
+                <asignaturas>
+                    <asignatura nombre="matematicas">
+                        <horas>5</horas>
+                    </asignatura>
+                    <asignatura nombre="fisica">
+                        <horas>3</horas>
+                    </asignatura>
+                </asignaturas>
+            </profesor>
+            <profesor nombre="David" apellidos="Ruíz Fernández">
+                <asignaturas>
+                    <asignatura nombre="historia">
+                        <horas>4</horas>
+                    </asignatura>
+                    <asignatura nombre="geografia">
+                        <horas>2</horas>
+                    </asignatura>
+                </asignaturas>
+            </profesor>
+        </profesores>
+        <alumnos>
+            <alumno>
+                <nombre>Clara</nombre>
+                <apellidos>Sanchez Lopez</apellidos>
+                <edad>17</edad>
+            </alumno>
+            <alumno>
+                <nombre>Lucas</nombre>
+                <apellidos>Martinez Perez</apellidos>
+                <edad>16</edad>
+            </alumno>
+        </alumnos>
+    </ies>
+</instituto>

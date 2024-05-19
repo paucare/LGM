@@ -14,8 +14,8 @@
             
             <h1>Datos del ies</h1>
 
-            <p><strong>Nombre:</strong><xsl:value-of select="ies/instituto/nombre"/></p>
-            <p><strong>Ubicacion:</strong><xsl:value-of select="ies/instituto/ubicacion"/></p>
+            <p><strong>Nombre:</strong><xsl:value-of select="instituto/ies/@nombre"/></p>
+            <p><strong>Ubicacion:</strong><xsl:value-of select="instituto/ies/@ubicacion"/></p>
             <h2>Profesores</h2>
 
             <table>
@@ -25,13 +25,13 @@
                 <td>Asignaturas</td>
                 </tr>
 
-                <xsl:for-each select="ies/instituto/profesores/profesor">
+                <xsl:for-each select="instituto/ies/profesores/profesor">
                     <tr>
-                    <td><xsl:value-of select="nombre"/></td>
-                    <td><xsl:value-of select="apellidos"/></td>
+                    <td><xsl:value-of select="@nombre"/></td>
+                    <td><xsl:value-of select="@apellidos"/></td>
                     <td><ul>
                         <xsl:for-each select="asignaturas/asignatura">
-                            <li><strong><xsl:value-of select="nombre"/></strong> : <xsl:value-of select="horas"/> horas/semana </li>
+                            <li><strong><xsl:value-of select="@nombre"/></strong> : <xsl:value-of select="horas"/> horas/semana </li>
                         </xsl:for-each>
                     </ul></td>
                     </tr>
@@ -46,7 +46,7 @@
                     <td>Apellidos</td>
                     <td>Edad</td>
                 </tr>
-                <xsl:for-each select="ies/instituto/alumnos/alumno">
+                <xsl:for-each select="instituto/ies/alumnos/alumno">
                 <tr>
                     <td><xsl:value-of select="nombre"/></td>
                     <td><xsl:value-of select="apellidos"/></td>

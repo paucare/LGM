@@ -1,0 +1,20 @@
+<!ELEMENT instituto (ies)>
+<!ELEMENT ies (profesores,alumnos)>
+<!ATTLIST ies nombre CDATA #REQUIRED>
+<!ATTLIST ies ubicacion CDATA #REQUIRED>
+
+<!ELEMENT profesores (profesor+)>
+<!ELEMENT profesor (asignaturas)>
+<!ELEMENT asignaturas (asignatura+)>
+<!ELEMENT asignatura (horas)>
+<!ELEMENT horas (#PCDATA)>
+<!ATTLIST profesor nombre CDATA #REQUIRED>
+<!ATTLIST profesor apellidos CDATA #REQUIRED>
+<!ATTLIST asignatura nombre CDATA #REQUIRED>
+
+
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (nombre,apellidos,edad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
