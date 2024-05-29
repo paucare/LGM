@@ -1,0 +1,23 @@
+html{
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+}
+.vpadding{
+    border: solid 1px black;
+    padding: 50px;
+    text-align: center;
+}
+.vdisplay{
+    border: solid 1px black;
+    height: 300px;
+    margin: 30px auto;
+    width: 60%;
+    display: table;
+}
+.vdisplay p{
+    display: table-cell;
+    padding: 20px;
+    vertical-align: middle;
+}        
+

@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    width: 80%;
+    margin: 0 auto;
+}
+.bloques div{
+    border: solid 1px black;
+    text-align: center;
+    background-color: chartreuse;
+    display: inline-block;
+    height: 200px;
+    border: solid 1px black;
+    width: 25%;
+    margin-top: 100px;
+}
+.bloques{
+    background-color: red;
+    height: 400px;
+    margin: 40px auto;
+    width: 60%;
+}
+.main{
+    background-color: blue;
+    height: 200px;
+    margin: 0 auto;
+    width: 50%;
+}
+

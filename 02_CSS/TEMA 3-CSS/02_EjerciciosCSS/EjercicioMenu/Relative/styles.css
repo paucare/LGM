@@ -1,0 +1,74 @@
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif; 
+    }
+    .main{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .texto{
+        text-align: justify;
+        margin: 10px 20px;
+    }
+    .portadas{
+        text-align: center;
+    }
+    .portadas img{
+       margin: 0 auto;
+       display: inline-block;
+    }
+    
+    h2{
+        text-align: center;
+        background-color: red;
+        color: white;
+        margin: 0 auto;
+    }
+    .menu_container{
+        position: absolute;
+    }
+    .menu{
+        width: 100%;
+        background-color: red;
+        color: white;
+        position: relative;
+        left:40%;
+    }
+    .menu ul {
+        list-style: none; /* Elimina los estilos de la lista (puntos, números) */
+        margin: 0;
+        padding: 0; 
+    }
+    .menu li {
+        display: inline-block; /* también podrá ser: float: left;*/
+        list-style-type: none;
+        position: relative; 
+    }
+    .menu a {
+        display: block;
+        padding: 15px 20px; /* Añade espaciado interno alrededor del enlace */
+        text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+        color: white;/* Color del texto del enlace */ 
+    }
+    .menu a:hover {
+        background-color: #555; /* Cambia el color de fondo, pasar mouse */
+    }
+    h3{
+        text-decoration: underline;
+        text-align: center;
+    }
+    .definition{
+        border: 1px solid goldenrod;
+        padding: 10px;
+    }
+    .history{
+        border: 1px solid goldenrod;
+        padding: 10px;
+        width: fit-content;
+    }
+
+
+    

@@ -1,0 +1,41 @@
+*{
+box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+h1{
+    position:relative;
+    left: 50px;
+    top: 10px;
+    width: 80%;
+}
+.padre{
+    background-color: lightblue;
+    height: 200px;
+    width: 80%;
+    margin: 20px auto;
+}
+.sticky-menu{
+    background-color: lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.footer{
+    background-color: lightgray;
+    position: fixed;
+    bottom: 0;
+}
+.footer div, .sticky-menu div{
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+.large{
+    background-color: burlywood;
+    height: 100px;
+    margin: 20px auto;
+    width: 60%;
+}
