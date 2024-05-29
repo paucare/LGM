@@ -1,0 +1,12 @@
+{
+    "curso":{
+        "nombre":"Alessandro",
+        "duracion":250,
+        "instructor" :"Alejandra",
+        "estudiantes":[
+            {"nombre": "Alessandro", "nota": 10},
+            {"nombre": "Iris", "nota": 10},
+            {"nombre": "Álvaro", "nota": 10}
+        ]
+    }
+}
