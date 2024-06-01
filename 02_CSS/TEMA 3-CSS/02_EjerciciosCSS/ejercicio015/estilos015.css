@@ -14,174 +14,174 @@
     --submenu-text-color: #000;
     --footer-bg-menu-color: #087c29;
 }
-
-/* estilos comunes */
+/*Estilos comunes*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+}
 .container{
     margin: 0 auto;
     width: 90%;
     box-shadow: 0 0 10px var(--bg-color-container);
 }
-
 .cb{
-    clear:both;
+    clear: both;
 }
 
-/*header */
-
+/*Header general*/
 .header-contacto{
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: 10px 30px;
-    font-size: 0,9rem;
+    font-size: 0.9rem;
 }
+/*Header atencion*/
+
 .header-contacto__atencion{
     float: left;
-    width: 50%;
+}
+.header-contacto__atencion p{
+    display: inline-block;
+    
 }
 .header-contacto__atencion img{
     margin-right: 5px;
 }
-.header-contacto__atencion p{
-    display: inline-block;
-}
+
+/*Header social*/
 .header-contacto__social{
     float: right;
-    width: 50%;
 }
-.header-contacto__social p {
+.header-contacto__social img{
+    margin-left: 10px;
+}
+.header-contacto__social p{
     display: inline-block;
 }
 .header-contacto__social p a{
     text-align: none;
-    color: var(--text-color)
+    color: var(--text-color);
 }
-.header-contacto__social img{
-    margin-left: 5px;
-}
-
-/*menu*/
-
+/*Header menu*/
 .header-menu{
-    padding: 10px 30px;
+    padding: 15px 0 0 30px;
 }
-
+/*Header menu icono*/
 .header-menu__icono{
     width: 25%;
     float: left;
 }
+/*Header menu barra*/
 .header-menu nav{
+    text-transform: uppercase;
     width: 75%;
     float: left;
-    text-transform: uppercase;
-    font-size: 0,8rem;
 }
-
-.header-menu nav ul,
-.header-menu nav li{
+.header-menu nav ul{
+    list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .header-menu nav li{
-    list-style-type: none;
     float: left;
-    color: var(--menu-text-color);
     padding: 10px;
+    color: var(--menu-text-color);
     position: relative;
 }
-
 .header-menu ul li ul{
     display: none;
     position: absolute;
     padding-top: 15px;
     background-color: var(--text-color);
 }
-.header-menu ul li ul li{
+.header-menu nav ul li ul li{
     width: 200px;
     color: var(--submenu-text-color);
     border: 1px solid var(--menu-bg-hover-color);
 }
-
 .header-menu nav ul li:hover ul{
     display: block;
-    z-index: 20;
+    z-index: 1;
 }
-
-/* foto bustamante */
-
+.header-menu nav ul li ul li:hover{
+    background-color: var(--menu-bg-hover-color);
+}
+/*Seccion bustamante*/
 .foto-busta{
     position: relative;
+    overflow: hidden;
 }
-
 [src="img/coviran-bustamante.png"]{
     width: 100%;
 }
-
 [src="img/fanta2.png"]{
     position: absolute;
-    left: 120px;
+    left: 1200px;
     transition: left 3s;
 }
-
-
 [src="img/fanta2.png"]:hover{
-   left: 0px;
+    left:0;
 }
-
-/*zona de noticias*/
+/*Seccion de noticias*/
 
 .noticias{
-    padding: 10px;
+    padding: 20px;
 }
-
 .noticia{
-    width: 32%;
-    margin: 5px;
+    width: 26%;
+    margin: 10px 50px 10px 60px;
     box-shadow: 0 0 10px var(--bg-color-container);
     height: 360px;
-    font-size: 1rem;
-    float:left;
-}
-
-.noticia img{
-    width: 100%;
+    float: left;
 }
 .noticia p{
-    padding: 10px;
     text-align: center;
+    padding: 30px;
+    font-weight: bold;
+}
+.noticia img{
+    width: 100%;
+    display: block;
+    height: auto;
 }
 
-.noticia:hover{
+.noticia img:hover{
     opacity: 0.5;
 }
 
-/* footer */
+/*Footer*/
+
+/*Parte de arriba*/
 
 .footer-arriba{
     background-color: var(--footer-bg-menu-color);
 }
-
 .footer-arriba__menu-item{
-    float:left;
     width: 25%;
+    float: left;
     padding: 0 20px;
 }
-.footer-arriba__menu-item a{
-    color: var(--text-color);
-    text-decoration: none;
-}
 .footer-arriba__menu-item p{
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 1px double var(--text-color);
     padding: 10px 20px;
+    width: 80%;
 }
+.footer-arriba__menu-item p a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/*Parte de abajo*/
 
 .footer-abajo{
     background-color: var(--bg-color);
     padding: 10px 30px;
     color: var(--text-color);
-    font-size:0,8rem;
+    font-size: 0.8rem;
 }
-.footer-abajo__imagenes{
+.footer-abajo_imagenes{
     text-align: center;
 }
 

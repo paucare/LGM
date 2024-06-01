@@ -17,11 +17,6 @@
     .portadas{
         text-align: center;
     }
-    .portadas img{
-       margin: 0 auto;
-       display: inline-block;
-    }
-    
     h2{
         text-align: center;
         background-color: red;
