@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bootstrap 5</title>
 	<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-	<link rel="stylesheet" href="css/style4.css"/>
+	<link rel="stylesheet" href="style4.css"/>
 	<link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -16,7 +16,7 @@
 </head>
 <body>
 	<!-- En el container irán todas las filas y columnas -->
-	<div class="container">
+	<div class="container.fluid">
 		<!-- Las filas () son grupos HORIZONTALES de columnas-->
 
 		<!-- Los tamaños de Columna en Bootsrap 5 son:
@@ -38,83 +38,83 @@
 				<!-- En un tamaño extra pequeño ocupa 12 columnas, 
 					en un tamaño mediano 6 columnas 
 					y uno extra-largo 4 columnas -->
-				<article class="col-4">
+				<article class="col-12 col-md-6 col-xl-4">
 					<h1>Elementos</h1>
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id repellendus sint ut reiciendis nesciunt aliquam dicta quidem, autem fugiat. Nihil architecto recusandae quasi qui exercitationem assumenda nam ea. Animi, tenetur.</p>
 				</article>
-				<article class="col-4">
+				<article class="col-12 col-md-6 col-xl-4">
 					<h1>Elementos</h1>
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id repellendus sint ut reiciendis nesciunt aliquam dicta quidem, autem fugiat. Nihil architecto recusandae quasi qui exercitationem assumenda nam ea. Animi, tenetur.</p>
 				</article>
-				<article class="col-4">
+				<article class="col-12 col-md-6 col-xl-4">
 					<h1>Elementos</h1>
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id repellendus sint ut reiciendis nesciunt aliquam dicta quidem, autem fugiat. Nihil architecto recusandae quasi qui exercitationem assumenda nam ea. Animi, tenetur.</p>
 				</article>
 			</section>
 			<section id="segunda" class="row">
-				<article class="col-6">
+				<article class="col-12 col-md-6">
 					<h1>Columnas anidadas 1</h1>
 					<div class="row">
-						<div class="col-4">Elemento 1</div>
-						<div class="col-4">Elemento 2</div>
-						<div class="col-4">Elemento 3</div>
+						<div class="col-12 col-md-6 col-xl-4">Elemento 1</div>
+						<div class="col-12 col-md-6 col-xl-4">Elemento 2</div>
+						<div class="col-12 col-md-6 col-xl-4">Elemento 3</div>
 					</div>
 				</article>
-				<article class="col-6">
+				<article class="col-12 col-md-6">
 					<h1>Columnas anidadas 2</h1>
 					<!-- -cols es de Boot5, permite indicar el número de columnas de una fila-->
-					<div class="row">
+					<div class="row row-cols-2">
 						<!-- solo funciona con la clase col, que ajusta automáticamente el espacio -->
-						<div class="col-6">Elemento 1</div>
-						<div class="col-6">Elemento 2</div>
+						<div class="col">Elemento 1</div>
+						<div class="col">Elemento 2</div>
 						<!-- la tercera columna se iría a la siguiente línea-->
-						<div class="col-6">Elemento 3</div>
+						<div class="col">Elemento 3</div>
 					</div>
 				</article>
 			</section>
 			<section id="tercera">
 				<h1>Alineación horizontal</h1>
 				<!-- Bootstrap utiliza flex para la alineación-->
-				<div class="row-justify-content-center">
+				<div class="row justify-content-center">
 					<div class="col-4 columna">Columna1</div>
 					<div class="col-4 columna">Columna2</div>
 				</div>
-				<div class=" ">
-					<div class="">Columna1</div>
-					<div class="">Columna2</div>
+				<div class="row justify-content-between">
+					<div class="col-4 columna">Columna1</div>
+					<div class="col-4 columna">Columna2</div>
 				</div>
-				<div class="">
-					<div class="">Columna1</div>
-					<div class="">Columna2</div>
+				<div class="row justify-content-around">
+					<div class="col-4 columna">Columna1</div>
+					<div class="col-4 columna">Columna2</div>
 				</div>
 				<!-- si queremos que todos los espacios sean iguales con evenly-->
-				<div class="">
-					<div class="">Columna1</div>
-					<div class="">Columna2</div>
+				<div class="row justify-content-evenly">
+					<div class="col-4 columna">Columna1</div>
+					<div class="col-4 columna">Columna2</div>
 				</div>
 			</section>
 
 			<section id="cuarta">
 				<h1>Alineación vertical</h1>
-				<div class=" ">
-					<div class="">Columna1</div>
-					<div class="">Columna2</div>
+				<div class="row align-items-start">
+					<div class="col-4 columna">Columna1</div>
+					<div class="col-4 columna">Columna2</div>
 				</div>
-				<div class=" ">
-					<div class="">Columna1</div>
-					<div class="">Columna2</div>
+				<div class="row align-items-center">
+					<div class="col-4 columna">Columna1</div>
+					<div class="col-4 columna">Columna2</div>
 				</div>
 			</section>
 
 			<section id="quinto">
 				<h1>Espaciado entre columnas</h1>
 				<h3>La forma más práctica, menos columnas(p.j 5 columnas para cada una) + flex</h3>
-				<div class="">
-					<article class="">
+				<div class="row justify-content-evenly">
+					<article class="col-5">
 						<h1>Elementos</h1>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id repellendus sint ut reiciendis nesciunt aliquam dicta quidem, autem fugiat. Nihil architecto recusandae quasi qui exercitationem assumenda nam ea. Animi, tenetur.</p>
 					</article>
-					<article class="">
+					<article class="col-5">
 						<h1>Elementos</h1>
 						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id repellendus sint ut reiciendis nesciunt aliquam dicta quidem, autem fugiat. Nihil architecto recusandae quasi qui exercitationem assumenda nam ea. Animi, tenetur.</p>
 					</article>

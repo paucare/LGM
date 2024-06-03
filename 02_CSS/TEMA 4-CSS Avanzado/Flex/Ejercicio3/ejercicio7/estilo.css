@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 25%;
+    box-shadow: 0 0 10px gray;
+}
+
+.title{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.cuerpo{
+    height:150px;
+}
+
+
+.pie{
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+

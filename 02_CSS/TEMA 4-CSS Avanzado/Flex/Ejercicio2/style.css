@@ -1,0 +1,42 @@
+.padre {
+  background-color: #001f3f;
+  padding: 3px;
+  font-size: 1em;
+  display: flex;
+  flex-direction:row;
+  margin: 3px;
+  gap:0.3em;
+}
+
+.hijo {
+  background-color: #0074d9;
+  padding: 20px;
+  color: white;
+}
+
+/*Segundo*/
+.padre:nth-of-type(2) .hijo {
+  flex-grow: 1;
+}
+
+/*Terecero*/
+.padre:nth-of-type(3) .hijo{
+  flex-grow: 1;
+}
+.padre:nth-of-type(3)  .hijo:first-child{
+  flex-grow:2;
+}
+.padre:nth-of-type(3)  .hijo:last-child{
+  flex-grow:0;
+  order:-1;
+}
+
+/*Cuarto*/
+.padre:nth-of-type(4) {
+  justify-content: flex-end;
+}
+
+.padre:nth-of-type(4) .hijo:nth-child(1) {
+  justify-content: flex-start;
+   margin-right: auto;
+}

@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    gap: 2px;
+    margin:0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    background-color: rgb(54, 215, 164);
+    padding: 10px 70px 10px 5px;
+}
